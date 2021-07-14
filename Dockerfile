@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install -y python-dev python-virtualenv redis-server supervisor
+RUN apt-get install -y python2-dev virtualenv redis-server supervisor
 
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 
